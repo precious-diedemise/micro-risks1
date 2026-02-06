@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 import json
 
-Debugging: Print available models to the app screen
+#Debugging: Print available models to the app screen
 st.write("Available Models:")
 for m in genai.list_models():
     if 'generateContent' in m.supported_generation_methods:
