@@ -2,11 +2,11 @@ import streamlit as st
 import google.generativeai as genai
 import json
 
-# Debugging: Print available models to the app screen
-#st.write("Available Models:")
-#for m in genai.list_models():
-    #if 'generateContent' in m.supported_generation_methods:
-        #st.write(m.name)
+Debugging: Print available models to the app screen
+st.write("Available Models:")
+for m in genai.list_models():
+    if 'generateContent' in m.supported_generation_methods:
+        st.write(m.name)
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Micro-Actuary", page_icon="⚖️", layout="centered")
