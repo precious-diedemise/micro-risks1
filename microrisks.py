@@ -3,10 +3,10 @@ import google.generativeai as genai
 import json
 
 #Debugging: Print available models to the app screen
-st.write("Available Models:")
-for m in genai.list_models():
-    if 'generateContent' in m.supported_generation_methods:
-        st.write(m.name)
+#st.write("Available Models:")
+#for m in genai.list_models():
+#    if 'generateContent' in m.supported_generation_methods:
+ #       st.write(m.name)
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Micro-Actuary", page_icon="⚖️", layout="centered")
@@ -32,7 +32,7 @@ def get_actuarial_data_from_llm(product_name):
     
     try:
         # 1. Select the Model
-        model = genai.GenerativeModel('gemini-pro-latest')
+        model = genai.GenerativeModel('gemini-flash-latest')
 
         # 2. The "Actuary" Prompt (Prompt Engineering)
         # We force the AI to return JSON so our code can read it easily.
