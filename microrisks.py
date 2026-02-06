@@ -26,7 +26,7 @@ def get_actuarial_data_from_llm(product_name):
     
     try:
         # 1. Select the Model
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-pro')
 
         # 2. The "Actuary" Prompt (Prompt Engineering)
         # We force the AI to return JSON so our code can read it easily.
